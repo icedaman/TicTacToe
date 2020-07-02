@@ -17,9 +17,9 @@ const handleSubmit = (event) => {
   }  
 }
 
-const handleClick = (rowIndex, colIndex) => {
-  console.log(rowIndex, colIndex)
-  setSquare(() => 'X')
+const handleClick = (square) => {
+  // console.log()
+  setSquare(() => square ='X')
 }
 
  const drawBoard = () => {
