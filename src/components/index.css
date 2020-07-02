@@ -1,0 +1,40 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+
+.row {
+  /* display: flex; */
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  color: #fff;
+}
+
+.square {
+  width: 100px;
+  margin: 0px;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+  min-height: 100px;
+  outline: none;
+}
+
+.mainContainer {
+  width: fit-content;
+  margin: auto;
+  padding-top: 100px;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+.testRow {
+  padding: 20px;
+}
