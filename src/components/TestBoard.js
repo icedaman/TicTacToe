@@ -6,7 +6,7 @@ export const TestBoard = () => {
 const [inputSize, setInputSize] = useState(null);
 
 const [board, setBoard] = useState([...Array().fill(' ')]);
-const [square, setSquare] = useState('');
+const [square, setSquare] = useState([]);
 
 const handleSubmit = (event) => {
   event.preventDefault();
@@ -18,8 +18,7 @@ const handleSubmit = (event) => {
 }
 
 const handleClick = (square) => {
-  // console.log()
-  setSquare(() => square ='X')
+  setSquare(prevState => [prevState, square='x'])
 }
 
  const drawBoard = () => {
