@@ -6,19 +6,19 @@ export const TestBoard = () => {
 const [inputSize, setInputSize] = useState(null);
 
 const [board, setBoard] = useState([...Array().fill(' ')]);
-const [square, setSquare] = useState([]);
+const [square, setSquare] = useState('');
 
 const handleSubmit = (event) => {
   event.preventDefault();
   if (Number(inputSize)) {
-    setBoard(() => [ ...Array(Number(inputSize)).fill(' ')]);
+    setBoard(() => [...Array(Number(inputSize)).fill(' ')]);
   }else {
     return;
   }  
 }
 
 const handleClick = (square) => {
-  setSquare(prevState => [prevState, square='x'])
+  setSquare(() => [...square='x'])
 }
 
  const drawBoard = () => {
